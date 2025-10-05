@@ -1,0 +1,24 @@
+appId: id.valuemax.customer.staging
+---
+- launchApp:
+    clearState: true
+- tapOn: Berikutnya
+- extendedWaitUntil:
+    visible: Berikutnya
+    timeout: 10000
+- tapOn: Berikutnya
+- extendedWaitUntil:
+    visible: Masuk
+    timeout: 10000
+- tapOn: Masuk
+- extendedWaitUntil:
+    visible: PROFIL
+    timeout: 10000
+- tapOn: PROFIL
+- tapOn: Email / No. Handphone*
+- inputText: jenartest01@yopmail.com
+- tapOn: Masukkan Password
+- inputText: Jenar123
+- tapOn: Masuk
+- tapOn: PROFIL
+- tapOn: Logout
